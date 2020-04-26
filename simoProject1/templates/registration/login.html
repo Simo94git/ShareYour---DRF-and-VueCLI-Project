@@ -1,0 +1,16 @@
+{% extends "auth_layout.html" %}
+{% load crispy_forms_tags %}
+
+
+{% block auth %}
+<h2>ShareYourWords</h2>
+<p class="lead text-muted">Scrivi subito il tuo articolo, <br>bastano pochi click!</p>
+<div class="login-form-container">
+	<form method="POST">
+		{% csrf_token %}
+		{{ form|crispy}}
+		<button type="submit" class="btn  btn-dark">Accedi</button>
+	</form>
+	<p class="mt-2" style="font-size: 18px">Non sei ancora iscritto?<br> Clicca <a href="{% url 'django_registration_register' %}">qui</a> per registrarti</p>
+</div>
+{% endblock %}

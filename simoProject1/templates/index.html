@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+			{% block style %}
+				<link href="{% static 'bundle.css' %}" rel="stylesheet">
+			{%  endblock %}
+
+		{% block content %}
+			<noscript>
+				<strong>
+					Il nostro sito richiede Javascript per il suo corretto funzionamento. Abilita JavaScript per continuare
+				</strong>
+			</noscript>
+
+			<div id="app"></div>
+
+		{% endblock %}
+
+			{% block js %}
+				<script src="{% static 'bundle.js' %}"></script>
+			{%  endblock %}
+
+			

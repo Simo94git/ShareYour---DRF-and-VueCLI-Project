@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load render_bundle from webpack_loader %}
+
+
+
+
+
+			{% block content %}
+			<noscript>
+				<strong>
+					Il nostro sito richiede Javascript per il suo corretto funzionamento. Abilita JavaScript per continuare
+				</strong>
+			</noscript>
+				<div id="app"></div>
+
+				{% render_bundle 'app' %}
+			{% endblock %}
