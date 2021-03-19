@@ -10,7 +10,7 @@ django-registration==3.1
 django-rest-auth==0.9.5
 django-rest-framework==0.1.0
 django-webpack-loader==0.7.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 idna==2.9
 oauthlib==3.1.0
 Pillow==7.0.0
